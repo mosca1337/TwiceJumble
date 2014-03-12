@@ -1,0 +1,6 @@
+# Scrambler
+
+* Run script with `python jumple.py`.
+* Enter a word or series of characters.
+
+This program works be creating a mapping of characters to english words. For example the words ‘fate’ and ‘feat’ will be mapped using the key ‘aeft’. When a user enters a word or series of characters, that string is sorted to match the keys used in the lookup table. I then look for all possible combinations of the key. For example, if the user enters ‘car’, the key will be ‘acr’. We then find all possible combinations of that key which would be ‘acr’, ‘ac’, ‘ar’, ‘ac’, cr’, ‘a’, ‘c’, ‘r’. We then use those keys to lookup any potential words in constant time.
